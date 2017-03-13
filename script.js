@@ -182,7 +182,3 @@ var myFunction = function () {
     document.querySelector('body').appendChild(bigDiv3);
     trib(seqMax, bigDiv3);
 }; // previously was window.onload =
-
-window.onload = function () {
-    document.title = "Interactive JavaScript";
-};
