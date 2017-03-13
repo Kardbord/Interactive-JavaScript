@@ -129,75 +129,8 @@ function tribHelper(n) {
     };
 }
 
-function setStyles() {
-    var styles = document.createElement('style');
-    styles.textContent = ".tree-left {" +
-        "    float: left;" +
-        "    display: inline-block;" +
-        "    margin-right: 5px;" +
-        "    margin-left: 2px;" +
-        "    background-color: rgba(0, 0, 255, 0.1);" +
-        "}" +
-        "" +
-        ".tree-right {" +
-        "    float: right;" +
-        "    display: inline-block;" +
-        "    margin-left: 4px;" +
-        "    margin-right: 2px;" +
-        "    background-color: rgba(0, 0, 255, 0.1);" +
-        "}" +
-        "" +
-        ".trib-right {" +
-        "    float: right;" +
-        "    display: inline-block;" +
-        "    margin-right: 4px;" +
-        "    background-color: rgba(0, 0, 255, 0.1);" +
-        "}" +
-        "" +
-        ".trib-left {" +
-        "    float: left;" +
-        "    display: inline-block;" +
-        "    margin-left: 4px;" +
-        "    background-color: rgba(0, 0, 255, 0.1);" +
-        "}" +
-        "" +
-        ".trib-mid {" +
-        "    float: right;" +
-        "    display: inline-block;" +
-        "    margin-right: 4px;" +
-        "    margin-left: 4px;" +
-        "    background-color: rgba(0, 0, 255, 0.1);" +
-        "}" +
-        "" +
-        ".bigDiv {" +
-        "    text-align: center;" +
-        "    overflow: hidden;" +
-        "    width: 50000px;" +
-        "    margin-top: 20px;" +
-        "}" +
-        "" +
-        ".red {" +
-        "    background: rgb(180, 60, 60);" +
-        "}" +
-        "" +
-        ".yellow {" +
-        "    background: rgb(252, 255, 64);" +
-        "}" +
-        "" +
-        ".green {" +
-        "    background: rgb(71, 255, 21);" +
-        "}" +
-        "" +
-        ".initial {" +
-        "    background-color: rgba(0, 0, 255, 0.1);" +
-        "}";
-    document.querySelector('body').appendChild(styles);
-}
-
 window.onload = function () {
     document.title = "Sequences";
-
-    setStyles();
 
     var seqMax = 11;
 
