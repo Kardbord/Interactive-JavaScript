@@ -129,7 +129,7 @@ function tribHelper(n) {
     };
 }
 
-window.onload = function () {
+var myFunction = function () {
     document.title = "Sequences";
 
     var seqMax = 11;
@@ -173,4 +173,4 @@ window.onload = function () {
     bigDiv3.appendChild(say3);
     document.querySelector('body').appendChild(bigDiv3);
     trib(seqMax, bigDiv3);
-};
+}; // previously was window.onload =
