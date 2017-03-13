@@ -129,6 +129,14 @@ function tribHelper(n) {
     };
 }
 
+function updateButton(node) {
+    var label = node.parentNode;
+    var slider = label.querySelector('input');
+    var form = label.parentNode;
+    var button = form.querySelector('button');
+    button.textContent = "myButton(" + slider.value + ")";
+}
+
 var myFunction = function () {
     document.title = "Sequences";
 
