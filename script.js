@@ -111,7 +111,7 @@ function tribHelper(n) {
         var right = tribHelper(n - 3);
 
         left.html.setAttribute("class", "trib-left");
-        mid.html.setAttribute("class", "trib-mid")
+        mid.html.setAttribute("class", "trib-mid");
         right.html.setAttribute("class", "trib-right");
 
         value = left.value + mid.value + right.value;
