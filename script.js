@@ -137,6 +137,10 @@ function updateButton(node, sequence) {
     button.textContent = sequence + "(" + slider.value + ")";
 }
 
+function buttonPressed(node, sequence) {
+
+}
+
 var myFunction = function () {
     document.title = "Sequences";
 
