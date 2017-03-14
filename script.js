@@ -138,10 +138,27 @@ function updateButton(node, sequence) {
 }
 
 function buttonPressed(node, sequence) {
+    var form = node.parentNode;
+    var slider = form.querySelector('input');
+    var bigDiv = form.parentNode;
 
+    var tree = bigDiv.querySelector('div');
+
+    if (tree) {
+        bigDiv.removeChild(tree);
+    }
+
+    if (sequence == 'Fib') {
+        fib(parseInt(slider.value), bigDiv);
+    } else if (sequence == 'Pell') {
+        pell(parseInt(slider.value), bigDiv);
+    } else if (sequence == 'Trib'){
+        trib(parseInt(slider.value), bigDiv);
+    }
 }
 
-var myFunction = function () {
+// Below is an old, outdated function. I keep it around for reference just in case.
+/*window.onload = function () {
     document.title = "Sequences";
 
     var seqMax = 11;
@@ -185,4 +202,4 @@ var myFunction = function () {
     bigDiv3.appendChild(say3);
     document.querySelector('body').appendChild(bigDiv3);
     trib(seqMax, bigDiv3);
-}; // previously was window.onload =
+};*/
