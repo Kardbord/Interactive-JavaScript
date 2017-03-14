@@ -4,6 +4,11 @@ button {
     font-size: 16pt;
 }
 
+.header {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
 .tree-left {
     float: left;
     display: inline-block;

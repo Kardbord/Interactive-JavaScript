@@ -7,12 +7,24 @@
 </head>
 <body>
 <script src="script.js" type="text/javascript"></script>
+
 <div class="bigDiv red">
+    <p class="header"><a href="https://oeis.org/A000045" target="_blank">Fibonacci Sequence</a></p>
     <form>
         <label>
             <input type="range" min="0" max="11" value="0" onchange="updateButton(this, 'Fib')">
         </label>
         <button type="button">Fib(0)</button>   <!-- TODO: add onclick event; see Lecture 3-13  -->
+    </form>
+</div>
+
+<div class="bigDiv yellow">
+    <p class="header"><a href="https://oeis.org/A000129" target="_blank">Pell Sequence</a></p>
+    <form>
+        <label>
+            <input type="range" min="0" max="11" value="0" onchange="updateButton(this, 'Pell')">
+        </label>
+        <button type="button">Pell(0)</button>   <!-- TODO: add onclick event; see Lecture 3-13  -->
     </form>
 </div>
 </body>
